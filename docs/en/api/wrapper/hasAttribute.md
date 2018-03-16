@@ -1,16 +1,16 @@
 # hasAttribute(attribute, value)
 
-Assert `Wrapper` DOM node has attribute matching value.
+Asserte que le DOM du `Wrapper` a l'attribut avec la valeur correspondate.
 
-Returns `true` if `Wrapper` DOM node contains attribute with matching value.
+Retourne `true` si le nœud du DOM du `Wrapper` contient un attribut avec la bonne valeur.
 
-- **Arguments:**
+- **Paramètres :**
   - `{string} attribute`
   - `{string} value`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
@@ -21,9 +21,9 @@ const wrapper = mount(Foo)
 expect(wrapper.hasAttribute('id', 'foo')).toBe(true)
 ```
 
-- **Alternative:**
+- **Alternative :**
 
-You could get the attribute from the `Wrapper.element` to have a value based assertion:
+Vous pouvez récuperer l'attribut depuis `Wrapper.element` pour avoir une assertion basée sur une valeur.
 
 ```js
 import { mount } from 'vue-test-utils'
@@ -34,4 +34,4 @@ const wrapper = mount(Foo)
 expect(wrapper.element.getAttribute('id')).toBe('foo')
 ```
 
-This makes for a more informative assertion error.
+Cela produit une erreur d'assertion plus informative.

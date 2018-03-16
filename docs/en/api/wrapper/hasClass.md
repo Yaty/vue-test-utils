@@ -1,15 +1,15 @@
 # hasClass(className)
 
-Assert `Wrapper` DOM node has class contains `className`.
+Asserte que le DOM du `Wrapper` contient une classe nommé `className`.
 
-Returns `true` if `Wrapper` DOM node contains class.
+Retourne `true` si le nœud du DOM du `Wrapper` contient la classe.
 
-- **Arguments:**
+- **Paramètres :**
   - `{string} className`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

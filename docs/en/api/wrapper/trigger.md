@@ -1,17 +1,17 @@
 # trigger(eventName)
 
-Triggers an event on the `Wrapper` DOM node.
+Déclenche un évènement sur le nœud du DOM du `Wrapper`.
 
-Trigger takes an optional `options` object. The properties in the `options` object are added to the Event.
+`Trigger` prend un objet optionel `options`. Les propriétés dans `options` sont ajoutées à l'évènement.
 
-You can run preventDefault on the event by passing `preventDefault: true` in `options`.
+Vous pouvez activer `preventDefault` sur l'évènement en passant `preventDefault: true` dans `options`.
 
-- **Arguments:**
-  - `{string} eventName`
+- **Paramètres :**
+  - `{string} eventName : nom de l'évènement`
   - `{Object} options`
     - `{boolean} preventDefault`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

@@ -1,10 +1,10 @@
 # update()
 
-Force root Vue component to re-render.
+Force le composant Vue principal à se mettre à jour.
 
-If called on a `Wrapper` containing a `vm`, it will force the `Wrapper` `vm` to re-render.
+Si appellée sur un `Wrapper` contenant une instance de Vue `vm`, il la mettra à jour.
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
@@ -13,7 +13,7 @@ import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)
 expect(wrapper.vm.bar).toBe('bar')
-wrapper.vm.bar = 'new value'
+wrapper.vm.bar = 'nouvelle valeur'
 wrapper.update()
-expect(wrapper.vm.bar).toBe('new value')
+expect(wrapper.vm.bar).toBe('nouvelle valeur')
 ```

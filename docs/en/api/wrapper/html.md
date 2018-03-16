@@ -1,10 +1,10 @@
 # html()
 
-Returns HTML of `Wrapper` DOM node as a string.
+Retourne l'HTML du DOM du `Wrapper` en string.
 
-- **Returns:** `{string}`
+- **Retourne :** `{string}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

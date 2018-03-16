@@ -1,15 +1,15 @@
 # find(selector)
 
-Returns [`Wrapper`](README.md) of first DOM node or Vue component matching selector.
+Retourne un [`Wrapper`](README.md) du premier nœud du DOM ou le composant Vue correspondant au sélecteur.
 
-Use any valid [selector](../selectors.md).
+Utilise n'importe quels [sélecteurs valides](../selectors.md).
 
-- **Arguments:**
-  - `{string|Component} selector`
+- **Paramètres **
+  - `{string|Component} selector : un sélecteur`
 
-- **Returns:** `{Wrapper}`
+- **Retourne :** `{Wrapper}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
@@ -24,4 +24,4 @@ const bar = wrapper.find(Bar)
 expect(bar.is(Bar)).toBe(true)
 ```
 
-- **See also:** [Wrapper](README.md)
+- **Voir aussi :** [Wrapper](README.md)

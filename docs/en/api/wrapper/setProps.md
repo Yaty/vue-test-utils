@@ -1,11 +1,13 @@
 # setProps(props)
 
-- **Arguments:**
+- **Paramètres :**
   - `{Object} props`
 
-- **Usage:**
+- **Exemple :**
 
+Fixe les `props` de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
 Sets `Wrapper` `vm` props and forces update.
+**Note : le `Wrapper` doit contenir une instance de Vue.**
 
 **Note the Wrapper must contain a Vue instance.**
 
@@ -16,10 +18,10 @@ import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)
 wrapper.setProps({ foo: 'bar' })
-expect(wrapper.vm.foo).to.equal('bar')
+expect(wrapper.props().foo).toBe('bar')
 ```
 
-You can also pass a `propsData` object, which will initialize the Vue instance with passed values.
+Vous pouvez aussi passer un objet `propsData`, qui initialisera l'instance de Vue avec des données.
 
 ``` js
 // Foo.vue

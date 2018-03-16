@@ -1,10 +1,10 @@
 # isVueInstance()
 
-Assert `Wrapper` is Vue instance.
+Asserte que `Wrapper` contient une instance de Vue.
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

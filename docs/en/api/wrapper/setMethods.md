@@ -1,13 +1,13 @@
 # setMethods(methods)
 
-Sets `Wrapper` `vm` methods and forces update.
+Fixe les méthodes de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
 
-**Note the Wrapper must contain a Vue instance.**
+**Note : le `Wrapper` doit contenir une instance de Vue.**
 
-- **Arguments:**
+- **Paramètres:**
   - `{Object} methods`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

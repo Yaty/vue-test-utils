@@ -1,10 +1,10 @@
 # isEmpty()
 
-Assert `Wrapper` does not contain child node.
+Asserte que le `Wrapper` ne contient pas de nœuds enfants.
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

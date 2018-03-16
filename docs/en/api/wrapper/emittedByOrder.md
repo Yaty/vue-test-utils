@@ -1,10 +1,10 @@
 # emittedByOrder()
 
-Return an Array containing custom events emitted by the `Wrapper` `vm`.
+Retourne un tableau contenant des évènements émis par l'instance de Vue `vm` de `Wrapper`.
 
-- **Returns:** `Array<{ name: string, args: Array<any> }>`
+- **Retourne :** `Array<{ name: string, args: Array<any> }>`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
@@ -16,13 +16,13 @@ wrapper.vm.$emit('foo')
 wrapper.vm.$emit('bar', 123)
 
 /*
-wrapper.emittedByOrder() returns the following Array:
+wrapper.emittedByOrder() retourne le tableau suivant :
 [
   { name: 'foo', args: [] },
   { name: 'bar', args: [123] }
 ]
 */
 
-// assert event emit order
+// asserte l'ordre des émissions
 expect(wrapper.emittedByOrder().map(e => e.name)).toEqual(['foo', 'bar'])
 ```

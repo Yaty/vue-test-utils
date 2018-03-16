@@ -1,13 +1,13 @@
 # is(selector)
 
-Assert `Wrapper` DOM node or `vm` matches [selector](../selectors.md).
+Asserte que le DOM du `Wrapper` ou que l'instance de Vue `vm` correspond au [sélecteur](../selectors.md).
 
-- **Arguments:**
-  - `{string|Component} selector`
+- **Paramètres :**
+  - `{string|Component} selector : un sélecteur`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
