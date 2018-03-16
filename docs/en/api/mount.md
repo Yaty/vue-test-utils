@@ -1,4 +1,4 @@
-# mount(component {, options}])
+# `mount(component {, options}])`
 
 - **Arguments:**
 
@@ -9,19 +9,16 @@
 
 - **Options:**
 
-See [options](options.md)
+<p><strong>⚠Cette page est actuellement en cours de traduction française. Vous pouvez repasser plus tard ou <a href="https://github.com/vuejs-fr/vue-test-utils" target="_blank">participer à la traduction</a> de celle-ci dès maintenant !</strong></p><p>See [options](options.md)</p>
 
 - **Usage:**
 
-Returns [`Wrapper`](wrapper/README.md) of first DOM node or Vue component matching selector.
-
-Use any valid [selector](selectors.md).
+Creates a [`Wrapper`](wrapper/README.md) that contains the mounted and rendered Vue component.
 
 **Without options:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -31,11 +28,11 @@ describe('Foo', () => {
   })
 })
 ```
+
 **With Vue options:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -53,8 +50,7 @@ describe('Foo', () => {
 **Attach to DOM:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -69,8 +65,7 @@ describe('Foo', () => {
 **Default and named slots:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import FooBar from './FooBar.vue'
@@ -80,7 +75,7 @@ describe('Foo', () => {
     const wrapper = mount(Foo, {
       slots: {
         default: [Bar, FooBar],
-        fooBar: FooBar, // Will match <slot name="FooBar" />,
+        fooBar: FooBar, // Will match `<slot name="FooBar" />`.
         foo: '<div />'
       }
     })
@@ -92,8 +87,7 @@ describe('Foo', () => {
 **Stubbing global properties:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 describe('Foo', () => {
@@ -112,8 +106,7 @@ describe('Foo', () => {
 **Stubbing components:**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 import Faz from './Faz.vue'
@@ -121,8 +114,8 @@ import Faz from './Faz.vue'
 describe('Foo', () => {
   it('renders a div', () => {
     const wrapper = mount(Foo, {
-      stub: {
-        Bar: '<div class="stubbed />',
+      stubs: {
+        Bar: '<div class="stubbed" />',
         BarFoo: true,
         FooBar: Faz
       }
