@@ -1,11 +1,10 @@
 # WrapperArray
 
-A `WrapperArray` is an object that contains an array of [Wrappers](../wrapper/README.md), and methods to test the `Wrappers`.
+Un `WrapperArray` est un objet contenant un tableau de [Wrappers](../wrapper/README.md) ainsi que les méthodes pour tester les `Wrappers`.
 
-- **Properties:**
+- **Propriétés :**
 
-`length` `number`: the number of `Wrappers` contained in the `WrapperArray`
+`length` `number`: le nombre de `Wrappers` que le `WrapperArray` contient.
+ - **Méthodes :**
 
- - **Methods:**
-
-There is a detailed list of methods in the WrapperArray section of the docs.
+Il y a une liste détaillé des méthodes dans la section `WrapperArray` de la documentation.

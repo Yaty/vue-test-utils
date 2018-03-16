@@ -1,13 +1,13 @@
 # setData(data)
 
-Sets `Wrapper` `vm` data and forces update on each `Wrapper` in `WrapperArray`.
+Définit les données de l'instance de Vue `vm` du `Wrapper` `vm` puis force la mise à jour sur chaque `Wrapper` de `WrapperArray`.
 
-**Note every `Wrapper` must contain a Vue instance.**
+**Note : chaque `Wrapper` doit contenir une instance de Vue.**
 
-- **Arguments:**
+- **Paramètre :**
   - `{Object} data`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

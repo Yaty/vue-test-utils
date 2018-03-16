@@ -1,14 +1,14 @@
 # hasAttribute(attribute, value)
 
-Assert every `Wrapper` in `WrapperArray` DOM node has `attribute` matching `value`.
+Asserte que chaque `Wrapper` de `WrapperArray` a un nœud du DOM qui à un attribut (`attribute`) ayant une certaine valeur (`value`).
 
-- **Arguments:**
-  - `{string} attribute`
-  - `{string} value`
+- **Paramètres :**
+  - `{string} attribute : l'attribut`
+  - `{string} value : la valeur`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

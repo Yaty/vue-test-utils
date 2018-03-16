@@ -1,13 +1,13 @@
 # at(index)
 
-Returns `Wrapper` at `index` passed. Uses zero based numbering (i.e. first item is at index 0).
+Retourne le `Wrapper` à l'index passé en paramètre. L'indexation commence à 0.
 
-- **Arguments:**
+- **Paramètre :**
   - `{number} index`
 
-- **Returns:** `{Wrapper}`
+- **Retourne :** `{Wrapper}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { shallow } from 'vue-test-utils'

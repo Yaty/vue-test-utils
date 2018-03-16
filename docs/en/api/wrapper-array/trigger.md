@@ -1,13 +1,13 @@
 # trigger(eventName)
 
-Triggers an event on every `Wrapper` in the `WrapperArray` DOM node.
+Déclenche un évènement sur chaque nœud du DOM des `Wrapper` de `WrapperArray`.
 
-**Note every `Wrapper` must contain a Vue instance.**
+**Note : chaque `Wrapper` doit contenir une instance de Vue.**
 
-- **Arguments:**
-  - `{string} eventName`
+- **Paramètre :**
+  - `{string} eventName ; nom de l'évènement`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

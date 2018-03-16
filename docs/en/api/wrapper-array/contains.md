@@ -1,15 +1,14 @@
 # contains(selector)
 
-Assert every wrapper in `WrapperArray` contains selector.
+Asserte que chaque `Wrapper` de `WrapperArray` contient un élément basé sur un sélecteur.
+Utilisez n'importe quels [sélecteurs](../selectors.md).
 
-Use any valid [selector](../selectors.md).
+- **Paramètres :**
+  - `{string|Component} selector : sélecteur`
 
-- **Arguments:**
-  - `{string|Component} selector`
+- **Retourne :** `{boolean}`
 
-- **Returns:** `{boolean}`
-
-- **Example:**
+- **Exemple :**
 
 ```js
 import { shallow } from 'vue-test-utils'

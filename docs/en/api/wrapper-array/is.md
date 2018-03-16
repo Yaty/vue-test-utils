@@ -1,13 +1,13 @@
 # is(selector)
 
-Assert every `Wrapper` in `WrapperArray` DOM node or `vm` matches [selector](../selectors.md).
+Asserte que chaque `Wrapper` de `WrapperArray` a un nœud du DOM ou une instance de Vue `vm` correspondant à un [sélecteur](../selectors.md).
 
-- **Arguments:**
-  - `{string|Component} selector`
+- **Paramètre :**
+  - `{string|Component} selector : un sélecteur`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

@@ -1,13 +1,13 @@
 # setProps(props)
 
-Sets `Wrapper` `vm` props and forces update on each `Wrapper` in `WrapperArray`.
+Fixe les `props` de l'instance de Vue `vm` du `Wrapper` et force la mise à jour sur chaque `Wrapper` de `WrapperArray`.
 
-**Note every `Wrapper` must contain a Vue instance.**
+**Note : chaque `Wrapper` doit contenir une instance de Vue.**
 
-- **Arguments:**
+- **Paramètre :**
   - `{Object} props`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

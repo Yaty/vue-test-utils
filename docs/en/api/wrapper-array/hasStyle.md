@@ -1,17 +1,17 @@
 # hasStyle(style, value)
 
-Assert every `Wrapper` in `WrapperArray` DOM node has style matching value.
+Asserte que chaque `Wrapper` de `WrapperArray` a un nœud DOM ayant un certain style avec une certaine valeur (`value`).
 
-Returns `true` if `Wrapper` DOM node has `style` matching `string`.
+Retourne `true` si le nœud du DOM du `Wrapper` contient un `style` correspondant à `value`.
 
-**Note will only detect inline styles when running in `jsdom`.**
-- **Arguments:**
+**Note : cela va uniquement détecter les styles `inlines` en cours d'exécution dans `jsdom`.**
+- **Paramètres :**
   - `{string} style`
-  - `{string} value`
+  - `{string} value : valeur`
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'

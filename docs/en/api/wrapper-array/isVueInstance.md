@@ -1,10 +1,10 @@
 # isVueInstance()
 
-Assert every `Wrapper` in `WrapperArray` is Vue instance.
+Asserte que chaque `Wrapper` de `WrapperArray` possède une instance de Vue.
 
-- **Returns:** `{boolean}`
+- **Retourne :** `{boolean}`
 
-- **Example:**
+- **Exemple :**
 
 ```js
 import { mount } from 'vue-test-utils'
