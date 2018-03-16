@@ -1,4 +1,4 @@
-# setMethods(methods)
+# `setMethods(methods)`
 
 Fixe les méthodes de l'instance de Vue `vm` du `Wrapper` et force la mise à jour sur chaque `Wrapper` de `WrapperArray`.
 
@@ -10,8 +10,7 @@ Fixe les méthodes de l'instance de Vue `vm` du `Wrapper` et force la mise à jo
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import sinon from 'sinon'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'

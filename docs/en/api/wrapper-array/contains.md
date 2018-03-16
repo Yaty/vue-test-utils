@@ -1,7 +1,6 @@
-# contains(selector)
+# `contains(selector)`
 
 Asserte que chaque `Wrapper` de `WrapperArray` contient un élément basé sur un sélecteur.
-Utilisez n'importe quels [sélecteurs](../selectors.md).
 
 - **Paramètres :**
   - `{string|Component} selector : sélecteur`
@@ -11,8 +10,7 @@ Utilisez n'importe quels [sélecteurs](../selectors.md).
 - **Exemple :**
 
 ```js
-import { shallow } from 'vue-test-utils'
-import { expect } from 'chai'
+import { shallow } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

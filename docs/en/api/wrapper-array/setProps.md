@@ -1,4 +1,4 @@
-# setProps(props)
+# `setProps(props)`
 
 Fixe les `props` de l'instance de Vue `vm` du `Wrapper` et force la mise à jour sur chaque `Wrapper` de `WrapperArray`.
 
@@ -10,8 +10,7 @@ Fixe les `props` de l'instance de Vue `vm` du `Wrapper` et force la mise à jour
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

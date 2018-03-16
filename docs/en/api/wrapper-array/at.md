@@ -1,4 +1,4 @@
-# at(index)
+# `at(index)`
 
 Retourne le `Wrapper` à l'index passé en paramètre. L'indexation commence à 0.
 
@@ -10,8 +10,7 @@ Retourne le `Wrapper` à l'index passé en paramètre. L'indexation commence à 
 - **Exemple :**
 
 ```js
-import { shallow } from 'vue-test-utils'
-import { expect } from 'chai'
+import { shallow } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = shallow(Foo)

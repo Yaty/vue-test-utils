@@ -1,4 +1,4 @@
-# is(selector)
+# `is(selector)`
 
 Asserte que chaque `Wrapper` de `WrapperArray` a un nœud du DOM ou une instance de Vue `vm` correspondant à un [sélecteur](../selectors.md).
 
@@ -10,8 +10,7 @@ Asserte que chaque `Wrapper` de `WrapperArray` a un nœud du DOM ou une instance
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

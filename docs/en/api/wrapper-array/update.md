@@ -1,4 +1,4 @@
-# update()
+# `update()`
 
 Force le composant Vue principal de chaque `Wrapper` de `WrapperArray` à se mettre à jour.
 
@@ -7,8 +7,7 @@ Si appellée sur `WrapperArray`, il mettra à jour le composant de chaque `Wrapp
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

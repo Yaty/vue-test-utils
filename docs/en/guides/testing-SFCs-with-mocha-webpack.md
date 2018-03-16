@@ -13,7 +13,7 @@ On va supposer que vous commencez avec une installation qui a déjà webpack, vu
 La première chose à faire est d'installer les dépendances de tests :
 
 ``` bash
-npm install --save-dev vue-test-utils mocha mocha-webpack
+npm install --save-dev @vue/test-utils mocha mocha-webpack
 ```
 
 Ensuite, on doit définir un script test dans notre `package.json`.
@@ -39,7 +39,7 @@ Quelques éléments importants à noter :
 
 #### Externaliser les dépendances npm
 
-Dans nos tests, nous allons surement importer un nombre conséquent de dépendances npm, certaines d'entre elles n'ont pas été conçues pour une utilisation dans un navigateur et ne peuvent être empaquetées par webpack. Il faut aussi considérer qu'externaliser les dépendances augmente énormément la vitesse de lancement des tests. On peut externaliser toutes les dépendances npm avec `webpack-node-externals -externals` :
+Dans nos tests, nous allons surement importer un nombre conséquent de dépendances npm, certaines d'entre elles n'ont pas été conçues pour une utilisation dans un navigateur et ne peuvent être empaquetées par webpack. Il faut aussi considérer qu'externaliser les dépendances augmente énormément la vitesse de lancement des tests. On peut externaliser toutes les dépendances npm avec `webpack-node-externals` :
 
 ```js
 // webpack.config.js
@@ -78,7 +78,7 @@ module.exports = {
 
 ### Mettre en place l'environnement du navigateur
 
-`vue-test-utils` requiert en environnement de navigateur pour fonctionner. On peut le simuler avec Node.js en utilisant `jsdom-global` :
+Vue Test Utils requiert en environnement de navigateur pour fonctionner. On peut le simuler avec Node.js en utilisant `jsdom-global` :
 
 ```bash
 npm install --save-dev jsdom jsdom-global
@@ -90,7 +90,7 @@ Puis dans `test/setup.js`:
 require('jsdom-global')()
 ```
 
-Cela ajoute un environnement de navigateur dans Node.js afin que `vue-test-utils` fonctionne correctement. 
+Cela ajoute un environnement de navigateur dans Node.js afin que Vue Test Utils fonctionne correctement.
 
 ### Choisir une bibliothèque d'assertions
 
@@ -116,7 +116,7 @@ global.expect = require('expect')
 
 Notez que nous utilisons `babel-loader` pour gérer JavaScript. Vous devriez déjà avoir Babel de configuré si vous l'utilisez dans votre application via un fichier `.babelrc`. Ici `babel-loader` va automatiquement utiliser le même fichier de configuration.
 
-Une autre chose à noter est que si vous utilisez une version de Node.js 6+, qui supporte déjà une majorité des fonctionnalités d'ES2015, vous pouvez configurer séparément un autre Babel [env option](https://babeljs.io/docs/usage/babelrc/#env-option) qui va uniquement transpiler les fonctionnalités non supportées dans la version de Node.js que vous utilisez (c.-à-d. stage-2 ou le support de la syntaxe flow, etc.).
+Une autre chose à noter est que si vous utilisez une version de Node.js 6+, qui supporte déjà une majorité des fonctionnalités d'ES2015, vous pouvez configurer séparément un autre Babel [env option](https://babeljs.io/docs/usage/babelrc/#env-option) qui va uniquement transpiler les fonctionnalités non supportées dans la version de Node.js que vous utilisez (c.-à-d. `stage-2` ou le support de la syntaxe flow, etc.).
 
 ### Ajouter un test
 
@@ -150,7 +150,7 @@ export default {
 Puis créez un test nommé `test/Counter.spec.js` avec le code suivant :
 
 ```js
-import { shallow } from 'vue-test-utils'
+import { shallow } from '@vue/test-utils'
 import Counter from '../src/Counter.vue'
 
 describe('Counter.vue', () => {
@@ -165,10 +165,14 @@ describe('Counter.vue', () => {
 Et maintenant on peut lancer le test avec :
 
 ```
-npm run unit
+npm run test
 ```
 
 Woohoo, nos tests fonctionnent !
+
+### Coverage (EN)
+
+To setup code coverage to `mocha-webpack`, follow [the `mocha-webpack` code coverage guide](https://github.com/zinserjan/mocha-webpack/blob/master/docs/guides/code-coverage.md).
 
 ### Ressources
 

@@ -3,9 +3,9 @@ declare type Options = { // eslint-disable-line no-undef
     mocks?: Object,
     slots?: Object,
     localVue?: Component,
+    provide?: Object,
     stubs?: Object,
     context?: Object,
-    clone?: boolean,
     attrs?: Object,
     listeners?: Object
 }

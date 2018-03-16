@@ -1,4 +1,4 @@
-# isVueInstance()
+# `isVueInstance()`
 
 Asserte que chaque `Wrapper` de `WrapperArray` possède une instance de Vue.
 
@@ -7,8 +7,7 @@ Asserte que chaque `Wrapper` de `WrapperArray` possède une instance de Vue.
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

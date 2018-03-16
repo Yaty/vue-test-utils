@@ -1,4 +1,4 @@
-# trigger(eventName)
+# `trigger(eventName)`
 
 Déclenche un évènement sur chaque nœud du DOM des `Wrapper` de `WrapperArray`.
 
@@ -10,8 +10,7 @@ Déclenche un évènement sur chaque nœud du DOM des `Wrapper` de `WrapperArray
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import sinon from 'sinon'
 import Foo from './Foo.vue'
 
