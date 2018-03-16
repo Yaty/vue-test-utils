@@ -1,4 +1,4 @@
-# findAll(selector)
+# `findAll(selector)`
 
 Retourne un [`WrapperArray`](../wrapper-array/README.md) de [Wrappers](README.md).
 
@@ -12,8 +12,7 @@ Utilise n'importe quels [sélecteurs valides](../selectors.md).
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

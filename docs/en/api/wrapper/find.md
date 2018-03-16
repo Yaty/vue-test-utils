@@ -1,4 +1,4 @@
-# find(selector)
+# `find(selector)`
 
 Retourne un [`Wrapper`](README.md) du premier nœud du DOM ou le composant Vue correspondant au sélecteur.
 
@@ -12,8 +12,7 @@ Utilise n'importe quels [sélecteurs valides](../selectors.md).
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

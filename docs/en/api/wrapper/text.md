@@ -1,4 +1,4 @@
-# text()
+# `text()`
 
 Retourne le contenu texte du `Wrapper`.
 
@@ -7,8 +7,7 @@ Retourne le contenu texte du `Wrapper`.
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)

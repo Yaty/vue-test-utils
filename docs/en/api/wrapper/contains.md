@@ -1,4 +1,4 @@
-# contains(selector)
+# `contains(selector)`
 
 Asserte que `Wrapper` contient un élément ou un composant correspondant au [sélecteur](../selectors.md).
 
@@ -10,8 +10,7 @@ Asserte que `Wrapper` contient un élément ou un composant correspondant au [s�
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 import Bar from './Bar.vue'
 

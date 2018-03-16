@@ -1,4 +1,4 @@
-# emittedByOrder()
+# `emittedByOrder()`
 
 Retourne un tableau contenant des évènements émis par l'instance de Vue `vm` de `Wrapper`.
 
@@ -7,8 +7,7 @@ Retourne un tableau contenant des évènements émis par l'instance de Vue `vm` 
 - **Exemple :**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 
 const wrapper = mount(Component)
 

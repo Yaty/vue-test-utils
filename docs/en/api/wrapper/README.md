@@ -1,4 +1,4 @@
-# Wrapper
+# `Wrapper`
 
 `vue-test-utils` est une API basée sur un `wrapper`.
 

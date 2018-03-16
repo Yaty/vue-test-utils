@@ -1,4 +1,4 @@
-# setProps(props)
+# `setProps(props)`
 
 - **Paramètres :**
   - `{Object} props`
@@ -12,13 +12,12 @@ Sets `Wrapper` `vm` props and forces update.
 **Note the Wrapper must contain a Vue instance.**
 
 ```js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo)
 wrapper.setProps({ foo: 'bar' })
-expect(wrapper.props().foo).toBe('bar')
+expect(wrapper.vm.foo).toBe('bar')
 ```
 
 Vous pouvez aussi passer un objet `propsData`, qui initialisera l'instance de Vue avec des données.
@@ -36,8 +35,7 @@ export default {
 ```
 
 ``` js
-import { mount } from 'vue-test-utils'
-import { expect } from 'chai'
+import { mount } from '@vue/test-utils'
 import Foo from './Foo.vue'
 
 const wrapper = mount(Foo, {
@@ -46,5 +44,5 @@ const wrapper = mount(Foo, {
   }
 })
 
-expect(wrapper.vm.foo).to.equal('bar')
+expect(wrapper.vm.foo).toBe('bar')
 ```

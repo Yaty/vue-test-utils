@@ -2,7 +2,7 @@
 
 Asserte que le DOM du `Wrapper` contient un style avec une certaine valeur.
 
-Retourne `true` si le nœud du DOM du `Wrapper` contient un `style` correspondant à `string`.
+Retourne `true` si le nœud du DOM du `Wrapper` contient un `style` correspondant à `value`.
 
 **Note : cela va uniquement détecter les styles `inlines` quand ils fonctionnent avec `jsdom`.**
 
