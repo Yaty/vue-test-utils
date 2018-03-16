@@ -5,6 +5,7 @@ Un `WrapperArray` est un objet contenant un tableau de [Wrappers](../wrapper/REA
 - **Propriétés :**
 
 `length` `number`: le nombre de `Wrappers` que le `WrapperArray` contient.
- - **Méthodes :**
+
+- **Méthodes :**
 
 Il y a une liste détaillé des méthodes dans la section `WrapperArray` de la documentation.
