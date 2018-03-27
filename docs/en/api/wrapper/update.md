@@ -1,8 +1,8 @@
 # `update()`
 
-Force le composant Vue principal à se mettre à jour.
+Force le composant racine de Vue à se mettre à jour.
 
-Si appellée sur un `Wrapper` contenant une instance de Vue `vm`, il la mettra à jour.
+Si appelée sur un `Wrapper` contenant une instance de Vue `vm`, cela forcera le `Wrapper` à la re-rendre.
 
 - **Exemple :**
 
