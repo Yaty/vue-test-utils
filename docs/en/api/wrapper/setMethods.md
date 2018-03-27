@@ -1,6 +1,6 @@
 # `setMethods(methods)`
 
-Fixe les méthodes de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
+Assigne les méthodes de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
 
 **Note : le `Wrapper` doit contenir une instance de Vue.**
 
