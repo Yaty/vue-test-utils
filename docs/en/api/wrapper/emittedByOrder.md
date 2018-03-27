@@ -1,6 +1,6 @@
 # `emittedByOrder()`
 
-Retourne un tableau contenant des évènements émis par l'instance de Vue `vm` de `Wrapper`.
+Retourne un tableau contenant des évènements émis personnalisés par l'instance de Vue `vm` de `Wrapper`.
 
 - **Retourne :** `Array<{ name: string, args: Array<any> }>`
 
