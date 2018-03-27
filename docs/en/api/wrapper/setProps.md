@@ -5,11 +5,9 @@
 
 - **Exemple :**
 
-Fixe les `props` de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
-Sets `Wrapper` `vm` props and forces update.
-**Note : le `Wrapper` doit contenir une instance de Vue.**
+Assigne les `props` de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
 
-**Note the Wrapper must contain a Vue instance.**
+**Note : le `Wrapper` doit contenir une instance de Vue.**
 
 ```js
 import { mount } from '@vue/test-utils'
