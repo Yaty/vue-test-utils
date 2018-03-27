@@ -1,6 +1,6 @@
 # `name()`
 
-Retourne le nom du composant si le `Wrapper` contient une instance de Vue. Il retourne le nom de la balise du nœud du DOM du `Wrapper` si il ne contient pas une instance de Vue. 
+Retourne le nom du composant si le `Wrapper` contient une instance de Vue. Il retourne le nom de la balise du nœud du DOM du `Wrapper` s'il ne contient pas une instance de Vue. 
 
 - **Retourne :** `{string}`
 
