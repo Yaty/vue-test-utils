@@ -1,6 +1,6 @@
 # `setData(data)`
 
-Fixe les données de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
+Assigne les données de l'instance de Vue `vm` du `Wrapper` `vm` et force la mise à jour.
 
 **Note : le `Wrapper` doit contenir une instance de Vue.**
 
