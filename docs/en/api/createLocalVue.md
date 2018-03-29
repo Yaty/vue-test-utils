@@ -5,7 +5,7 @@
 
 - **Utilisation :**
 
-`createLocalVue` retourne une classe de Vue pour ajouter des composants, des mixins et installer des plugins sans polluer la classe globale Vue.
+`createLocalVue` retourne une classe Vue pour ajouter des composants, des mixins et installer des plugins sans polluer la classe globale Vue.
 
 Utilisez la avec `options.localVue`
 
