@@ -2,7 +2,7 @@
 
 Fixe les méthodes de l'instance de Vue `vm` du `Wrapper` et force la mise à jour sur chaque `Wrapper` de `WrapperArray`.
 
-**Note : chaque `Wrapper` doit conenir une instance de Vue.**
+**Note : chaque `Wrapper` doit contenir une instance de Vue.**
 
 - **Paramètre :**
   - `{Object} methods`
