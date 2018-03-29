@@ -1,6 +1,6 @@
 # `WrapperArray`
 
-Un `WrapperArray` est un objet contenant un tableau de [Wrappers](../wrapper/README.md) ainsi que les méthodes pour tester les `Wrappers`.
+Un `WrapperArray` est un objet contenant un tableau de [`Wrappers`](../wrapper/README.md) ainsi que les méthodes pour tester les `Wrappers`.
 
 - **Propriétés :**
 
